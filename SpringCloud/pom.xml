@@ -11,6 +11,7 @@
     <modules>
         <module>Eureka</module>
         <module>Config</module>
+        <module>Config-Client</module>
     </modules>
 
     <properties>

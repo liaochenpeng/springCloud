@@ -16,5 +16,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/hanyahong/spring-cloud-microservice.git
-          searchPaths: cloud-rep
+          uri: https://github.com/liaochenpeng/springCloud.git
+          username: "243150929@qq.com"
+          password: "lcp243150929"
+          skip-ssl-validation: true
+          default-label: main
+          searchPaths: config-rep
