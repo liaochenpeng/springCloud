@@ -3,144 +3,66 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>org.example</groupId>
+    <version>1.0-SNAPSHOT</version>
     <artifactId>Eureka</artifactId>
 
-<!--    <parent>-->
-<!--        <groupId>org.springframework.boot</groupId>-->
-<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
-<!--        <version>2.1.0.RELEASE</version>-->
-<!--        <relativePath />-->
-<!--    </parent>-->
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <groupId>org.springframework.cloud</groupId>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <artifactId>spring-cloud-starter-eureka-server</artifactId>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
-<!--        &lt;!&ndash;        <dependency>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <groupId>org.springframework.cloud</groupId>&ndash;&gt;-->
-<!--        &lt;!&ndash;            <artifactId>spring-cloud-starter-config</artifactId>&ndash;&gt;-->
-<!--        &lt;!&ndash;        </dependency>&ndash;&gt;-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-eureka-server</artifactId>-->
+        <!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.cloud</groupId>-->
+        <!--            <artifactId>spring-cloud-starter-config</artifactId>-->
+        <!--        </dependency>-->
+
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
 <!--            <artifactId>spring-boot-starter-test</artifactId>-->
 <!--            <scope>test</scope>-->
 <!--        </dependency>-->
-<!--    </dependencies>-->
-<!--    &lt;!&ndash;资源库管理&ndash;&gt;-->
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>spring-snapshots</id>-->
-<!--            <name>Spring Snapshots</name>-->
-<!--            <url>https://repo.spring.io/libs-snapshot</url>-->
-<!--            <snapshots>-->
-<!--                <enabled>true</enabled>-->
-<!--            </snapshots>-->
-<!--        </repository>-->
-<!--    </repositories>-->
-<!--    &lt;!&ndash;依赖管理中心&ndash;&gt;-->
-<!--    <dependencyManagement>-->
-<!--        <dependencies>-->
-<!--            <dependency>-->
-<!--                <groupId>org.springframework.cloud</groupId>-->
-<!--                <artifactId>spring-cloud-dependencies</artifactId>-->
-<!--                <version>Finchley.RELEASE</version>-->
-<!--                <type>pom</type>-->
-<!--                <scope>import</scope>-->
-<!--            </dependency>-->
-<!--        </dependencies>-->
-<!--    </dependencyManagement>-->
-
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--                &lt;!&ndash; defined in spring-cloud-starter-parent pom (as documentation hint),-->
-<!--                    but needs to be repeated here &ndash;&gt;-->
-<!--                <configuration>-->
-<!--                    <requiresUnpack>-->
-<!--                        <dependency>-->
-<!--                            <groupId>com.netflix.eureka</groupId>-->
-<!--                            <artifactId>eureka-core</artifactId>-->
-<!--                        </dependency>-->
-<!--                        <dependency>-->
-<!--                            <groupId>com.netflix.eureka</groupId>-->
-<!--                            <artifactId>eureka-client</artifactId>-->
-<!--                        </dependency>-->
-<!--                    </requiresUnpack>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
-    <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.6</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-eureka-server</artifactId>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-config</artifactId>-->
-<!--        </dependency>-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-test</artifactId>-->
+        <!--            <version>2.1.1.RELEASE</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
     </dependencies>
     <!--资源库管理-->
-    <repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/libs-snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <!--依赖管理中心-->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Edgware.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
-    <!--构建中心-->
+  <!--构建中心-->
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <!-- defined in spring-cloud-starter-parent pom (as documentation hint),
-                    but needs to be repeated here -->
-                <configuration>
-                    <requiresUnpack>
-                        <dependency>
-                            <groupId>com.netflix.eureka</groupId>
-                            <artifactId>eureka-core</artifactId>
-                        </dependency>
-                        <dependency>
-                            <groupId>com.netflix.eureka</groupId>
-                            <artifactId>eureka-client</artifactId>
-                        </dependency>
-                    </requiresUnpack>
-                </configuration>
-            </plugin>
+          <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.1.7.RELEASE</version>
+            <!-- defined in spring-cloud-starter-parent pom (as documentation hint),
+                but needs to be repeated here -->
+            <configuration>
+                <requiresUnpack>
+                    <dependency>
+                        <groupId>com.netflix.eureka</groupId>
+                        <artifactId>eureka-core</artifactId>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.netflix.eureka</groupId>
+                        <artifactId>eureka-client</artifactId>
+                    </dependency>
+                </requiresUnpack>
+            </configuration>
+          </plugin>
         </plugins>
     </build>
 </project>
